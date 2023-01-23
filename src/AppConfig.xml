@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.springframework.org/schema/beans 
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+ <bean id="service1" class="ma.spring.dinjxml.MyServiceImpl1" />
+     <bean id="service2" class="ma.spring.dinjxml.MyServiceImpl2" />
+     
+        <bean id="client1" class="ma.spring.dinjxml.MyClientImp">
+            
+          <property name="service" ref="service2" />   
+        </bean>
+    
+    
+</beans>
